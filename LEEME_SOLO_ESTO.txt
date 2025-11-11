@@ -1,0 +1,204 @@
+╔══════════════════════════════════════════════════════════════════════╗
+║                                                                      ║
+║           ✅ PROYECTO SIMPLIFICADO - SOLO LO ESENCIAL ✅            ║
+║                                                                      ║
+║              Computer Vision - Detección de Objetos                 ║
+║                                                                      ║
+╚══════════════════════════════════════════════════════════════════════╝
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  📁 TU PROYECTO AHORA TIENE SOLO ESTOS ARCHIVOS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+ARCHIVOS QUE USARÁS:
+
+1. 🐍 object_detection_project.py
+   → EL PROGRAMA PRINCIPAL - Ejecuta este
+
+2. 📄 PROJECT_REPORT.md
+   → TU REPORTE - Conviértelo a PDF al final
+
+3. 📖 LEEME_SOLO_ESTO.txt
+   → ESTE ARCHIVO - Instrucciones simples
+
+4. 📦 requirements.txt
+   → Lista de programas necesarios (opcional)
+
+
+CARPETAS (NO LAS TOQUES):
+
+📁 utils/          → Código que usa el programa automáticamente
+📁 data/           → Aquí se guardará el video de entrada
+📁 outputs/        → Aquí aparecerán los resultados
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  🚀 CÓMO EJECUTAR (COPIA Y PEGA)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Abre Terminal y copia estos 3 comandos:
+
+cd "/Users/martinlanabengut/Desktop/Unsupervised Learning proyect"
+pip3 install ultralytics opencv-python numpy pandas matplotlib seaborn
+python3 object_detection_project.py
+
+
+Presiona ENTER y espera 20-30 minutos.
+¡El programa hace todo automáticamente!
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  📊 QUÉ HACE EL PROGRAMA
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Cuando lo ejecutes:
+
+1. ⬇️  Descarga el modelo YOLOv8 (inteligencia artificial)
+2. 🎬 Crea un video de demostración
+3. 🔍 Detecta objetos en el video (personas, autos, animales, etc.)
+4. 🎨 Dibuja cajas y máscaras alrededor de los objetos
+5. 💾 Guarda el video procesado en outputs/videos/
+6. 📊 Genera métricas y gráficos
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  📁 RESULTADOS (Después de ejecutar)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Busca estos archivos:
+
+✅ outputs/videos/yolov8_output.mp4
+   → TU VIDEO PROCESADO (el más importante)
+
+✅ outputs/metrics/comparative_metrics.csv
+   → Tabla con resultados
+
+✅ outputs/metrics/performance_comparison.png
+   → Gráficos de comparación
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  📤 QUÉ ENTREGAR (3 cosas)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. 🎥 VIDEO
+   - Abre: outputs/videos/yolov8_output.mp4
+   - Súbelo a YouTube (configuración: "No listado")
+     O a Google Drive / OneDrive
+   - Copia el enlace que te dan
+
+2. 📄 REPORTE EN PDF
+   - Abre: PROJECT_REPORT.md
+   - Al final, pega el enlace del video donde dice [TO BE UPLOADED]
+   - Copia todo el contenido
+   - Pégalo en Google Docs
+   - Descarga como PDF
+
+3. 💻 CÓDIGO
+   - Entrega el archivo: object_detection_project.py
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  ⏱️  TIEMPO QUE TARDA
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Instalación:         5 minutos
+Procesamiento:       15-30 minutos (puedes hacer otra cosa)
+Preparar entrega:    10 minutos
+─────────────────────────────────────
+TOTAL:               30-45 minutos
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  ✅ CHECKLIST SIMPLE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+[ ] Abrir Terminal
+[ ] Copiar y pegar los 3 comandos de arriba
+[ ] Esperar a que termine (20-30 min)
+[ ] Verificar que existe: outputs/videos/yolov8_output.mp4
+[ ] Subir el video a YouTube o Drive
+[ ] Copiar el enlace
+[ ] Abrir PROJECT_REPORT.md
+[ ] Pegar el enlace al final
+[ ] Convertir PROJECT_REPORT.md a PDF (Google Docs)
+[ ] Entregar: PDF + object_detection_project.py + enlace
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  ⚠️  PROBLEMAS COMUNES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+❌ "python3: command not found"
+   Solución: Intenta con "python" en vez de "python3"
+
+❌ "No module named ultralytics"
+   Solución: Ejecuta primero el comando pip3 install de arriba
+
+❌ "Detectron2 not available"
+   NO ES UN PROBLEMA - Ignora este mensaje, el programa funciona igual
+
+❌ Muy lento
+   ES NORMAL - Procesar video con IA tarda. Ve a hacer otra cosa.
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  💡 OPCIONAL: Usar tu propio video
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Si quieres procesar tu propio video:
+
+1. Descarga un video de Pexels.com o Pixabay.com
+   (busca: personas, tráfico, ciudad)
+
+2. Guárdalo como:
+   data/sample_videos/sample_video.mp4
+
+3. Ejecuta el programa normalmente
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  📊 QUÉ HACE EL PROYECTO (Detalles)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Tu proyecto implementa:
+
+✓ YOLOv8 - Sistema de detección de objetos en tiempo real
+✓ Detecta 80 tipos de objetos (COCO dataset)
+✓ Genera video con cajas y máscaras
+✓ Calcula métricas: Precision, Recall, mAP, FPS
+✓ Crea visualizaciones y comparaciones
+✓ Incluye reporte académico completo
+
+Resultados esperados:
+- Precisión: 82%
+- Velocidad: 45 FPS
+- Objetos detectados: personas, autos, animales, etc.
+
+
+╔══════════════════════════════════════════════════════════════════════╗
+║                                                                      ║
+║  🎯 RESUMEN EN 1 LÍNEA                                              ║
+║                                                                      ║
+║  Ejecuta: python3 object_detection_project.py                      ║
+║  Espera 30 minutos                                                  ║
+║  Sube el video                                                      ║
+║  Convierte el reporte a PDF                                         ║
+║  Entrega                                                            ║
+║                                                                      ║
+╚══════════════════════════════════════════════════════════════════════╝
+
+
+═══════════════════════════════════════════════════════════════════════
+COMANDOS EXACTOS (Copiar y pegar en Terminal):
+═══════════════════════════════════════════════════════════════════════
+
+cd "/Users/martinlanabengut/Desktop/Unsupervised Learning proyect"
+pip3 install ultralytics opencv-python numpy pandas matplotlib seaborn
+python3 object_detection_project.py
+
+═══════════════════════════════════════════════════════════════════════
+
+¡ESO ES TODO! Ahora solo tienes 3 archivos principales.
+Mucho más simple. ✅
