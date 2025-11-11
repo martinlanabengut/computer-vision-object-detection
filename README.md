@@ -74,7 +74,9 @@ After running, you'll find:
 
 ## 🎥 Demo Video
 
-**Processed output video**: [YouTube Link Here]
+**Processed output video**: https://youtu.be/y_iANZoI0Ms
+
+Watch the video to see real-time object detection and segmentation in action!
 
 ## 📄 Full Report
 
