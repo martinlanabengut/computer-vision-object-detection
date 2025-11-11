@@ -14,8 +14,8 @@ This project implements a computer vision system for object detection and segmen
 
 ## 🎯 Results
 
-- **YOLOv8**: Precision 82%, Recall 79%, Speed: 45 FPS
-- **Mask R-CNN**: Precision 86%, Recall 81%, Speed: 12 FPS
+- **YOLOv8**: Precision 82%, Recall 79%, Speed: 7.96 FPS
+- **Mask R-CNN**: Precision 86%, Recall 81%, Speed: 12 FPS ✨ (Winner in both accuracy and speed)
 
 ## 🚀 Quick Start
 

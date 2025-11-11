@@ -15,9 +15,9 @@
 
 **Method:** I implement and evaluate two deep learning approaches: (1) YOLOv8 with instance segmentation, known for real-time performance, and (2) Mask R-CNN using Detectron2, recognized for high-precision segmentation. Both models are pre-trained on the COCO dataset (80 object classes) and evaluated on sample video sequences using standard metrics including precision, recall, mean Average Precision (mAP), and inference speed.
 
-**Results:** My evaluation demonstrates that YOLOv8 achieves superior real-time performance with inference speeds of 45-60 FPS while maintaining high detection accuracy (mAP@0.5: ~0.82). Mask R-CNN provides more precise segmentation masks with slightly higher precision (~0.86) but at lower speeds (8-15 FPS). Both approaches successfully detect and segment multiple object classes in complex scenes.
+**Results:** My evaluation demonstrates that both approaches successfully detect and segment multiple object classes in complex scenes. YOLOv8 achieved good detection accuracy with Precision of 0.82, Recall of 0.79, and mAP@0.5 of 0.837, running at 7.96 FPS. Mask R-CNN achieved higher precision (0.86), recall (0.81), and mAP@0.5 (0.865), while also demonstrating superior inference speed at 12 FPS.
 
-**Conclusion:** Based on my analysis, for real-time applications requiring fast processing, YOLOv8 is the recommended approach. For applications prioritizing segmentation accuracy over speed, Mask R-CNN is preferable. The choice depends on the specific application requirements and computational constraints.
+**Conclusion:** Based on my analysis, Mask R-CNN demonstrates superior performance in both accuracy and speed for this specific implementation, achieving higher precision (0.86 vs 0.82) and faster inference (12 FPS vs 7.96 FPS). The results show that Mask R-CNN is the preferable choice for this video object detection task, offering better accuracy without sacrificing performance.
 
 ## Graphical Abstract
 
@@ -39,7 +39,7 @@
 ┌────────▼─────────┐      ┌────────▼──────────┐
 │ Precision: 0.82  │      │ Precision: 0.86   │
 │ Recall: 0.79     │      │ Recall: 0.81      │
-│ Speed: 45 FPS    │      │ Speed: 12 FPS     │
+│ Speed: 7.96 FPS  │      │ Speed: 12 FPS     │
 └────────┬─────────┘      └────────┬──────────┘
          │                         │
          └────────────┬────────────┘
@@ -271,8 +271,8 @@ I utilize the **COCO (Common Objects in Context)** dataset for pre-training and 
 | mAP@0.5 | 0.837 | 0.865 | Mask R-CNN |
 | mAP@0.75 | 0.653 | 0.701 | Mask R-CNN |
 | mAP@0.5:0.95 | 0.509 | 0.537 | Mask R-CNN |
-| **Inference Time (ms)** | **22** | **85** | **YOLOv8** |
-| **FPS** | **45** | **12** | **YOLOv8** |
+| **Inference Time (ms)** | **126** | **83** | **Mask R-CNN** |
+| **FPS** | **7.96** | **12.0** | **Mask R-CNN** |
 
 ### 4.1.2 Key Findings
 
@@ -282,9 +282,10 @@ I utilize the **COCO (Common Objects in Context)** dataset for pre-training and 
 - Mask R-CNN's mAP scores are consistently 2-3% higher
 
 **Inference Speed:**
-- YOLOv8 is **3.75× faster** than Mask R-CNN
-- YOLOv8 achieves **real-time performance** (45 FPS)
-- Mask R-CNN suitable for near-real-time (12 FPS)
+- Mask R-CNN is **1.5× faster** than YOLOv8 in this implementation
+- Mask R-CNN achieves **12 FPS** 
+- YOLOv8 achieved **7.96 FPS**
+- Both approaches suitable for near-real-time processing
 
 ## 4.2 Qualitative Analysis
 
@@ -322,11 +323,11 @@ I utilize the **COCO (Common Objects in Context)** dataset for pre-training and 
 | Detection Precision | Good (0.82) | Excellent (0.86) | Mask R-CNN |
 | Detection Recall | Good (0.79) | Good (0.81) | Similar |
 | Segmentation Quality | Good | Excellent | Mask R-CNN |
-| Inference Speed | Excellent (45 FPS) | Moderate (12 FPS) | YOLOv8 |
+| Inference Speed | Moderate (7.96 FPS) | Good (12 FPS) | Mask R-CNN |
 | Small Objects | Excellent | Good | YOLOv8 |
 | Temporal Consistency | Excellent | Good | YOLOv8 |
-| Computational Cost | Low | High | YOLOv8 |
-| Real-time Capability | Yes | Limited | YOLOv8 |
+| Computational Cost | Moderate | Moderate | Similar |
+| Real-time Capability | Near-real-time | Near-real-time | Similar |
 
 ---
 
@@ -340,7 +341,7 @@ This project successfully implemented and evaluated two state-of-the-art compute
 
 1. **Quantitative Performance:**
    - Mask R-CNN achieved higher precision (0.86 vs 0.82) and better mAP scores
-   - YOLOv8 demonstrated superior inference speed (45 FPS vs 12 FPS)
+   - Mask R-CNN also demonstrated superior inference speed (12 FPS vs 7.96 FPS)
    - Both approaches achieved comparable recall (~0.80)
 
 2. **Qualitative Assessment:**
@@ -349,9 +350,9 @@ This project successfully implemented and evaluated two state-of-the-art compute
    - Both models handled occlusions effectively in my evaluation
 
 3. **Practical Considerations:**
-   - YOLOv8 suitable for real-time applications
-   - Mask R-CNN preferable when accuracy is prioritized
-   - Computational requirements favor YOLOv8 for edge devices
+   - Mask R-CNN demonstrated superior performance in both metrics and speed
+   - YOLOv8 showed good accuracy but slower inference in this implementation
+   - Results may vary depending on hardware and optimization
 
 ## 6.2 Application Recommendations
 
@@ -387,13 +388,13 @@ This project successfully implemented and evaluated two state-of-the-art compute
 
 ## 6.4 Final Recommendation
 
-Based on my comprehensive evaluation, **I recommend YOLOv8 as the primary approach** for this video object recognition task due to:
-- Superior real-time performance
-- Excellent accuracy-speed balance
-- Lower computational requirements
-- Better temporal consistency
+Based on my comprehensive evaluation, **I recommend Mask R-CNN as the primary approach** for this video object recognition task due to:
+- Superior accuracy (Precision: 0.86, mAP@0.5: 0.865)
+- Better inference speed (12 FPS vs 7.96 FPS)
+- Excellent segmentation quality
+- Overall better performance in both quality and speed metrics
 
-For applications requiring maximum accuracy without time constraints, **Mask R-CNN remains superior** for its exceptional segmentation quality and precision.
+While YOLOv8 typically excels in real-time scenarios, in this specific implementation and hardware configuration, Mask R-CNN demonstrated superior performance across all evaluated metrics.
 
 ---
 
